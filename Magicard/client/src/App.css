@@ -1,0 +1,221 @@
+.App {
+  text-align: center;
+  background: #000;
+}
+
+.App-logo {
+  animation: logo-spin infinite 5s linear;
+  display: block;
+  border-radius: 50%;
+  width: 35vmin;
+  height: 36vmin;
+  box-shadow: 1vmin 0 3vmin 2vmin #f50,
+       inset -1vmin 0 3vmin 4vmin #f80,
+             -4vmin 0 35vmin 0 #f60;
+  margin-top: 50px;
+  pointer-events: none;
+}
+
+
+.App-logo, .App-logo:before, .App-logo:after {
+  display: block;
+  border-radius: 50%;
+}
+
+.App-logo:before, .App-logo:after {
+  content: "";
+  background: white;
+  position: relative;
+  top: 6vmin;
+}
+.App-logo:before {
+  width: 3vmin;
+  height: 3vmin;
+  left: 30vmin;
+  box-shadow: yellow 0 0 2vmin 2vmin,
+              yellow 2vmin 4vmin 2vmin 0.5vmin;
+}
+.App-logo:after {
+  width: 20vmin;
+  height: 20vmin;
+  opacity: 0.03;
+  left: -10vmin;
+}
+
+.scroll-bar {
+  width: 90vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gray-container {
+  width: 80vmin;
+  height: 45vmin;
+  background-color: #100e12;
+  border: 0.5vmin solid #a75624;
+  border-radius: 8px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.card-container {
+  -webkit-transition: all .3s ease;
+ -moz-transition: all .3s ease;
+ -ms-transition: all .3s ease;
+ transition: all .3s ease;
+
+
+ /*depth of the elements */
+ -webkit-perspective: 800px;
+ -moz-perspective: 800px;
+ -o-perspective: 800px;
+ perspective: 800px;
+
+ /*border: 1px solid #ff0000;*/
+ padding-left: 1%;
+}
+
+.gray-container.flipped {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+.kek {
+  background-color: #2b2b3e;
+  padding: 2vmin;
+  outline: none;
+  width: 40vmin;
+  height: 3.5vmin;
+  border: 0.3vmin solid #a75624;
+  border-radius: 8px;
+  font-size: 5vmin;
+  color: #dfdee6;
+}
+
+.prediction {
+  color: #a75624;
+  padding:2vmin;
+  padding-left: 4vmin;
+  padding-right: 4vmin;
+  font-size: 5vmin;
+}
+
+.name-input {
+  margin-left: 2vmin;
+}
+
+.help {
+  text-align: left;
+  color: #a75624;
+  margin-bottom: 50px;
+  font-size: 4vmin;
+  width: 80vmin;
+}
+
+.age-input  {
+  margin-left: 6.4vmin;
+  width: 10vmin;
+}
+
+.name-header {
+  color: #a75624;
+  font-size: 5vmin;
+}
+
+.second {
+  padding: 4vmin;
+  float: left;
+  display:flex;
+  flex-direction: row;
+}
+
+.first {
+  color: #a75624;
+  font-size: 6vmin;
+  padding: 2vmin;
+  border-bottom: 0.5vmin solid #a75624;
+  font-weight: bold;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.clicks {
+  margin-left: 5vmin;
+  padding: 1vmin;
+}
+
+.close {
+  height: 7vmin;
+  width: 7vmin;
+  float: right;
+}
+
+.close-container {
+  display:flex;
+  flex-direction: row-reverse;
+  width: 95%;
+  padding: 2vmin;
+}
+
+.gray-container .back {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.gray-container .front,
+.gray-container .back
+ {
+   position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+ }
+
+ .gray-container .back {
+   -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+ }
+
+.clicks:hover {
+  border: 0.5vmin solid #a75624;
+  border-radius: 8px;
+}
+
+@keyframes logo-spin {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(-360deg)}
+}
+
+@keyframes spinner {
+  to {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+}
